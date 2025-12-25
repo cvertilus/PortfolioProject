@@ -1,0 +1,123 @@
+{
+    "navbar": {
+        "home": "Inicio",
+        "about": "Acerca de",
+        "contact": "Contacto",
+        "projects": "Proyectos"
+    },
+    "hero": {
+        "welcome": "Hola , soy ",
+        "lastName": "Colby",
+        "firstName": "Vertilus",
+        "title": "Desarrollador Full Stack",
+        "description": "Soy un desarrollador apasionado por crear soluciones innovadoras que transforman ideas en experiencias digitales eficientes y escalables. ",
+        "contact": "Contáctame"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "completed": "Finalizados",
+        "inProgress": "en progreso",
+        "list": {
+            "portfolio": {
+                "name": "Portfolio Full Stack",
+                "description": "Aplicación web desarrollada con Angular y Java Spring Boot",
+                "tech": "Angular, Spring Boot, MySQL",
+                "status": "Finalizado",
+                "image": "public/img/Portfolio.png",
+                "github": "https://github.com/cvertilus/PortfolioBackend",
+                "demo": "https://portfolio-frontend-e4ec2.web.app/"
+            },
+            "ecommerce": {
+                "name": "E-commerce",
+                "description": "Plataforma para manejar un carrito, Replica de un E-commerce",
+                "tech": "React, Material Ui",
+                "status": "Finalizado",
+                "image": "public/img/Ecommerce.png",
+                "github": "https://github.com/cvertilus/EcommerceProject",
+                "demo": "https://reacteco.netlify.app/"
+            },
+            "dashboard": {
+                "name": "Sistema para Generar un Qr",
+                "description": "Generar Qr para compartir informacion de contacto y demas",
+                "tech": "React, Material UI",
+                "status": "Finalizado",
+                "image": "public/img/GenerarQR.png",
+                "github": "https://github.com/cvertilus/GenerQr",
+                "demo": "https://makerqr.netlify.app/"
+            },
+            "Movie": {
+                "name": "App de Peliculas",
+                "description": "Aplicación para buscar y ver las ultimas películas ",
+                "tech": "React, Material Ui, The Movie DB API",
+                "status": "Finalizado",
+                "image": "public/img/MovieSiteWeb.png",
+                "github": "https://github.com/cvertilus/moviesCine",
+                "demo": "https://htfilm.netlify.app/"
+            },
+            "api-user": {
+                "name": "Api  de Usuario",
+                "description": "Microservicio para gestionar usuarios y autenticación",
+                "tech": "Spring Boot, Docker, Keycloak",
+                "status": "Finalizado",
+                "image": "public/img/UserManagement.png",
+                "github": "https://github.com/cvertilus/UserManagement"
+            },
+            "api": {
+                "name": "Backend Digital Money",
+                "description": "Microservicio para gestionar cuentas bancarias, transferencias y usuarios",
+                "tech": "Spring Boot , Docker, PostgreSQL, Swagger, Keycloak",
+                "status": "Finalizado",
+                "image": "public/img/BackendDigitalMoney.png",
+                "github": "https://github.com/cvertilus/Backend-DigitalMoney"
+            },
+            "Sistema de reservacion cine": {
+                "name": "Sistema de reservacion cine",
+                "description": "Sistema para reservar asientos en un cine, gestionar películas y horarios, recibir correos de confirmación",
+                "tech": "Spring Boot , Docker, PostgreSQL, Swagger, Keycloak, RabbitMQ, React , Material UI",
+                "status": "En progreso"
+            },
+            "chat": {
+                "name": "Chat en tiempo real",
+                "description": "Sistema de mensajería con WebSockets",
+                "tech": "Socket.io, Spring Boot, React",
+                "status": "En progreso"
+            }
+        }
+    },
+    "about": {
+        "title": "Sobre mí",
+        "intro1": "Soy desarrollador Full Stack enfocado en crear aplicaciones escalables, claras y bien diseñadas.",
+        "intro2": "Disfruto resolver problemas, aprender nuevas tecnologías y construir productos que aporten valor real.",
+        "stackTitle": "Tecnologías",
+        "workflowTitle": "Cómo trabajo",
+        "workflow": [
+            "Analizo el problema",
+            "Diseño la solución",
+            "Desarrollo y pruebo",
+            "Optimizo y documento"
+        ],
+        "hobbiesTitle": "Fuera del código",
+        "hobbies": [
+            "Natación",
+            "Básquet",
+            "Degustación de vinos (principalmente Malbec)"
+        ]
+    },
+    "contact": {
+        "title": "Contacto",
+        "description": "Si tenés un proyecto en mente, una propuesta o simplemente querés ponerte en contacto, escribime.",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "email": "Email",
+        "phone": "Teléfono",
+        "form": {
+            "name": "Nombre",
+            "email": "Email",
+            "message": "Mensaje",
+            "send": "Enviar"
+        },
+        "success": "Mensaje enviado correctamente",
+        "error": "Error al enviar el mensaje, por favor intente nuevamente",
+        "footer":"Todos los derechos reservados"
+    }
+}

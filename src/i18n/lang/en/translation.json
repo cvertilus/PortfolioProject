@@ -1,0 +1,123 @@
+{
+    "navbar": {
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "projects": "Projects"
+    },
+    "hero": {
+        "welcome": "Hello, I'm ",
+        "lastName": "Colby",
+        "firstName": "Vertilus",
+        "title": "Full Stack Developer",
+        "description": "I am a passionate developer dedicated to creating innovative solutions that transform ideas into efficient and scalable digital experiences. ",
+        "contact": "Contact Me"
+    },
+    "projects": {
+        "title": "Projects",
+        "completed": "Completed",
+        "inProgress": "In progress",
+        "list": {
+            "portfolio": {
+                "name": "Full Stack Portfolio",
+                "description": "Web application developed with Angular and Java Spring Boot",
+                "tech": "Angular, Spring Boot, MySQL",
+                "status": "Completed",
+                "image": "public/img/Portfolio.png",
+                "github": "https://github.com/cvertilus/PortfolioBackend",
+                "demo": "https://portfolio-frontend-e4ec2.web.app/"
+            },
+            "ecommerce": {
+                "name": "E-commerce",
+                "description": "Platform to manage a shopping cart, e-commerce replica",
+                "tech": "React, Material UI",
+                "status": "Completed",
+                "image": "public/img/Ecommerce.png",
+                "github": "https://github.com/cvertilus/EcommerceProject",
+                "demo": "https://reacteco.netlify.app/"
+            },
+            "dashboard": {
+                "name": "QR Generator System",
+                "description": "Application to generate QR codes for sharing contact information and more",
+                "tech": "React, Material UI",
+                "status": "Completed",
+                "image": "public/img/GenerarQR.png",
+                "github": "https://github.com/cvertilus/GenerQr",
+                "demo": "https://makerqr.netlify.app/"
+            },
+            "Movie": {
+                "name": "Movie App",
+                "description": "Application to search and view the latest movies",
+                "tech": "React, Material UI, The Movie DB API",
+                "status": "Completed",
+                "image": "public/img/MovieSiteWeb.png",
+                "github": "https://github.com/cvertilus/moviesCine",
+                "demo": "https://htfilm.netlify.app/"
+            },
+            "api-user": {
+                "name": "User API",
+                "description": "Microservice to manage users and authentication",
+                "tech": "Spring Boot, Docker, Keycloak",
+                "status": "Completed",
+                "image": "public/img/UserManagement.png",
+                "github": "https://github.com/cvertilus/UserManagement"
+            },
+            "api": {
+                "name": "Digital Money Backend",
+                "description": "Microservice to manage bank accounts, transfers, and users",
+                "tech": "Spring Boot, Docker, PostgreSQL, Swagger, Keycloak",
+                "status": "Completed",
+                "image": "public/img/BackendDigitalMoney.png",
+                "github": "https://github.com/cvertilus/Backend-DigitalMoney"
+            },
+            "Sistema de reservacion cine": {
+                "name": "Cinema Booking System",
+                "description": "System to reserve cinema seats, manage movies and schedules, and send confirmation emails",
+                "tech": "Spring Boot, Docker, PostgreSQL, Swagger, Keycloak, RabbitMQ, React, Material UI",
+                "status": "In progress"
+            },
+            "chat": {
+                "name": "Real-Time Chat",
+                "description": "Messaging system using WebSockets",
+                "tech": "Socket.io, Spring Boot, React",
+                "status": "In progress"
+            }
+        }
+    },
+    "about": {
+        "title": "About me",
+        "intro1": "I am a Full Stack developer focused on building scalable, clean and well-designed applications.",
+        "intro2": "I enjoy solving problems, learning new technologies and building products that deliver real value.",
+        "stackTitle": "Technologies",
+        "workflowTitle": "How I work",
+        "workflow": [
+            "I analyze the problem",
+            "I design the solution",
+            "I develop and test",
+            "I optimize and document"
+        ],
+        "hobbiesTitle": "Beyond coding",
+        "hobbies": [
+            "Swimming",
+            "Basketball",
+            "Wine tasting (mainly Malbec)"
+        ]
+    },
+    "contact": {
+        "title": "Contact",
+        "description": "If you have a project in mind, a proposal, or just want to get in touch, feel free to write to me.",
+        "linkedin": "LinkedIn",
+        "github": "GitHub",
+        "email": "Email",
+        "phone": "Phone",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send"
+        },
+        "success": "Message sent successfully",
+        "error": "Error sending the message, please try again",
+        "footer": "All rights reserved."
+    }
+}
