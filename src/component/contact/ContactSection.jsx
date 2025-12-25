@@ -56,222 +56,226 @@ export default function ContactSection() {
     }
     return (
         <>
-            <Box
-                component="section"
-                sx={{
-                    width: "100%",
-                    py: { xs: 8, md: 12 },
-                    px: { xs: 2, md: 8 },
-                    backgroundColor: "var(--background)",
-                    color: "var(--text)",
+            <Box>
 
-                }}
-            >
+
                 <Box
+                    component="section"
                     sx={{
-                        maxWidth: "1100px",
-                        mx: "auto",
-                        display: "grid",
-                        gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
-                        gap: "3rem"
+                        width: "100%",
+                        py: { xs: 8, md: 12 },
+                        px: { xs: 2, md: 8 },
+                        backgroundColor: "var(--background)",
+                        color: "var(--text)",
+
                     }}
                 >
-                    {/* TEXTO + ICONOS */}
-                    <Box>
-                        <Typography variant="h4" sx={{ mb: 2, fontWeight: 600 }}>
-                            {t("contact.title")}
-                        </Typography>
-
-                        <Typography sx={{ mb: 4, color: "var(--muted)" }}>
-                            {t("contact.description")}
-                        </Typography>
-
-                        {/* ICONOS DE CONTACTO */}
-                        <Stack direction="row" spacing={2}>
-                            <Tooltip title={t("contact.linkedin")}>
-                                <IconButton
-                                    component="a"
-                                    href="https://www.linkedin.com/in/colby-vertilus-908422194/"
-                                    target="_blank"
-                                    sx={{
-                                        color: "var(--Primary)",
-                                        "&:hover": {
-                                            transform: "translateY(-3px)",
-                                            boxShadow: "0 6px 20px rgba(0,0,0,0.2)"
-                                        }
-                                    }}
-                                >
-                                    <LinkedInIcon />
-                                </IconButton>
-                            </Tooltip>
-
-                            <Tooltip title={t("contact.github")}>
-                                <IconButton
-                                    component="a"
-                                    href="https://github.com/cvertilus/"
-                                    target="_blank"
-                                    sx={{
-                                        color: "var(--Primary)",
-                                        "&:hover": {
-                                            transform: "translateY(-3px)",
-                                            boxShadow: "0 6px 20px rgba(0,0,0,0.2)"
-                                        }
-                                    }}
-                                >
-                                    <GitHubIcon />
-                                </IconButton>
-                            </Tooltip>
-
-                            <Tooltip title={t("contact.email")}>
-                                <IconButton
-                                    component="a"
-                                    href="mailto:vertiluscolby@gmail.com"
-                                    sx={{
-                                        color: "var(--Primary)",
-                                        "&:hover": {
-                                            transform: "translateY(-3px)",
-                                            boxShadow: "0 6px 20px rgba(0,0,0,0.2)"
-                                        }
-                                    }}
-                                >
-                                    <EmailIcon />
-                                </IconButton>
-                            </Tooltip>
-
-                            <Tooltip title={t("contact.phone")}>
-                                <IconButton
-                                    component="a"
-                                    href="tel:+5491133315282"
-                                    sx={{
-                                        color: "var(--Primary)",
-                                        "&:hover": {
-                                            transform: "translateY(-3px)",
-                                            boxShadow: "0 6px 20px rgba(0,0,0,0.2)"
-                                        }
-                                    }}
-                                >
-                                    <PhoneIcon />
-                                </IconButton>
-                            </Tooltip>
-                        </Stack>
-                    </Box>
-
-                    {/* FORMULARIO */}
                     <Box
-                        component="form"
-                        ref={formRef}
-                        onSubmit={sendEmail}
                         sx={{
-                            display: "flex",
-                            flexDirection: "column",
-                            gap: 2
+                            maxWidth: "1100px",
+                            mx: "auto",
+                            display: "grid",
+                            gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" },
+                            gap: "3rem"
                         }}
                     >
-                        <TextField
-                            label={t("contact.form.name")}
-                            name='name'
+                        {/* TEXTO + ICONOS */}
+                        <Box>
+                            <Typography variant="h4" sx={{ mb: 2, fontWeight: 600 }}>
+                                {t("contact.title")}
+                            </Typography>
+
+                            <Typography sx={{ mb: 4, color: "var(--muted)" }}>
+                                {t("contact.description")}
+                            </Typography>
+
+                            {/* ICONOS DE CONTACTO */}
+                            <Stack direction="row" spacing={2}>
+                                <Tooltip title={t("contact.linkedin")}>
+                                    <IconButton
+                                        component="a"
+                                        href="https://www.linkedin.com/in/colby-vertilus-908422194/"
+                                        target="_blank"
+                                        sx={{
+                                            color: "var(--Primary)",
+                                            "&:hover": {
+                                                transform: "translateY(-3px)",
+                                                boxShadow: "0 6px 20px rgba(0,0,0,0.2)"
+                                            }
+                                        }}
+                                    >
+                                        <LinkedInIcon />
+                                    </IconButton>
+                                </Tooltip>
+
+                                <Tooltip title={t("contact.github")}>
+                                    <IconButton
+                                        component="a"
+                                        href="https://github.com/cvertilus/"
+                                        target="_blank"
+                                        sx={{
+                                            color: "var(--Primary)",
+                                            "&:hover": {
+                                                transform: "translateY(-3px)",
+                                                boxShadow: "0 6px 20px rgba(0,0,0,0.2)"
+                                            }
+                                        }}
+                                    >
+                                        <GitHubIcon />
+                                    </IconButton>
+                                </Tooltip>
+
+                                <Tooltip title={t("contact.email")}>
+                                    <IconButton
+                                        component="a"
+                                        href="mailto:vertiluscolby@gmail.com"
+                                        sx={{
+                                            color: "var(--Primary)",
+                                            "&:hover": {
+                                                transform: "translateY(-3px)",
+                                                boxShadow: "0 6px 20px rgba(0,0,0,0.2)"
+                                            }
+                                        }}
+                                    >
+                                        <EmailIcon />
+                                    </IconButton>
+                                </Tooltip>
+
+                                <Tooltip title={t("contact.phone")}>
+                                    <IconButton
+                                        component="a"
+                                        href="tel:+5491133315282"
+                                        sx={{
+                                            color: "var(--Primary)",
+                                            "&:hover": {
+                                                transform: "translateY(-3px)",
+                                                boxShadow: "0 6px 20px rgba(0,0,0,0.2)"
+                                            }
+                                        }}
+                                    >
+                                        <PhoneIcon />
+                                    </IconButton>
+                                </Tooltip>
+                            </Stack>
+                        </Box>
+
+                        {/* FORMULARIO */}
+                        <Box
+                            component="form"
+                            ref={formRef}
+                            onSubmit={sendEmail}
                             sx={{
-                                width: "100%",
-                                color: "var(--text)",
-                                border: "1px solid var(--text)",
-                                backgroundColor: "var(--Surface)"
-                            }}
-                            required
-                            variant="outlined"
-
-                        />
-
-                        <TextField
-                            label={t("contact.form.email")}
-                            type="email"
-                            name="email"
-                            sx={{
-                                width: "100%",
-                                color: "var(--text)",
-                                border: "1px solid var(--text)",
-                                backgroundColor: "var(--Surface)"
-                            }}
-                            required
-                        />
-
-                        <TextField
-                            label={t("contact.form.message")}
-                            name='message'
-                            multiline
-                            rows={4}
-                            required
-                            sx={{
-                                width: "100%",
-                                color: "var(--text)",
-                                border: "1px solid var(--text)",
-                                backgroundColor: "var(--Surface)"
-                            }}
-                        />
-
-                        <Button
-                            type="submit"
-                            variant="contained"
-                            disabled={loading}
-                            sx={{
-                                mt: 2,
-                                alignSelf: "flex-start",
-                                backgroundColor: "var(--Primary)",
-                                textTransform: "none",
-                                px: 4,
-                                "&:hover": {
-                                    transform: "translateY(-3px)",
-                                    boxShadow: "0 6px 20px rgba(0,0,0,0.2)"
-                                }
-
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: 2
                             }}
                         >
+                            <TextField
+                                label={t("contact.form.name")}
+                                name='name'
+                                sx={{
+                                    width: "100%",
+                                    color: "var(--text)",
+                                    border: "1px solid var(--text)",
+                                    backgroundColor: "var(--Surface)"
+                                }}
+                                required
+                                variant="outlined"
 
-                            {loading ? (
-                                <CircularProgress size={30} sx={{ color: "var(--primary)" }} />
-                            ) : (
-                                t("contact.form.send")
-                            )}
-                        </Button>
+                            />
+
+                            <TextField
+                                label={t("contact.form.email")}
+                                type="email"
+                                name="email"
+                                sx={{
+                                    width: "100%",
+                                    color: "var(--text)",
+                                    border: "1px solid var(--text)",
+                                    backgroundColor: "var(--Surface)"
+                                }}
+                                required
+                            />
+
+                            <TextField
+                                label={t("contact.form.message")}
+                                name='message'
+                                multiline
+                                rows={4}
+                                required
+                                sx={{
+                                    width: "100%",
+                                    color: "var(--text)",
+                                    border: "1px solid var(--text)",
+                                    backgroundColor: "var(--Surface)"
+                                }}
+                            />
+
+                            <Button
+                                type="submit"
+                                variant="contained"
+                                disabled={loading}
+                                sx={{
+                                    mt: 2,
+                                    alignSelf: "flex-start",
+                                    backgroundColor: "var(--Primary)",
+                                    textTransform: "none",
+                                    px: 4,
+                                    "&:hover": {
+                                        transform: "translateY(-3px)",
+                                        boxShadow: "0 6px 20px rgba(0,0,0,0.2)"
+                                    }
+
+                                }}
+                            >
+
+                                {loading ? (
+                                    <CircularProgress size={30} sx={{ color: "var(--primary)" }} />
+                                ) : (
+                                    t("contact.form.send")
+                                )}
+                            </Button>
+                        </Box>
                     </Box>
                 </Box>
-            </Box>
 
 
-            <Box
-                sx={{
-                    width: "100%",
-                    borderTop: "1px solid var(--Secondary)",
-                    mt: 6
-                }}
-            />
-            <Box
-                sx={{
-                    width: "100%",
-                    py: 3,
-                    textAlign: "center",
-                    fontSize: "0.85rem",
-                    color: "var(--muted)",
-                    backgroundColor: "var(--background)"
-                }}
-            >
-                © {new Date().getFullYear()} Vertilus Colby . {t("contact.footer")}.
-            </Box>
-            <Snackbar
-                open={snackbar.open}
-                autoHideDuration={4000}
-                onClose={handleSnackbarClose}
-                anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-            >
-                <MuiAlert
-                    onClose={handleSnackbarClose}
-                    severity={snackbar.severity}
-                    elevation={6}
-                    variant="filled"
-                    sx={{ width: "100%" }}
+                <Box
+                    sx={{
+                        width: "100%",
+                        borderTop: "1px solid var(--Secondary)",
+                        mt: 6
+                    }}
+                />
+                <Box
+                    sx={{
+                        width: "100%",
+                        py: 3,
+                        textAlign: "center",
+                        fontSize: "0.85rem",
+                        color: "var(--muted)",
+                        backgroundColor: "var(--background)"
+                    }}
                 >
-                    {snackbar.message}
-                </MuiAlert>
-            </Snackbar>
+                    © {new Date().getFullYear()} Vertilus Colby . {t("contact.footer")}.
+                </Box>
+                <Snackbar
+                    open={snackbar.open}
+                    autoHideDuration={4000}
+                    onClose={handleSnackbarClose}
+                    anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+                >
+                    <MuiAlert
+                        onClose={handleSnackbarClose}
+                        severity={snackbar.severity}
+                        elevation={6}
+                        variant="filled"
+                        sx={{ width: "100%" }}
+                    >
+                        {snackbar.message}
+                    </MuiAlert>
+                </Snackbar>
+            </Box>
 
         </>
     )
