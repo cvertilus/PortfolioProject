@@ -173,14 +173,26 @@ export default function ContactSection() {
                             <TextField
                                 label={t("contact.form.name")}
                                 name='name'
+
                                 sx={{
-                                    maxWidth: "100%",
-                                    color: "var(--text)",
-                                    border: "1px solid var(--text)",
-                                    backgroundColor: "var(--Surface)"
+                                    width: "100%",
+                                    
+                                    // CAMBIAR COLOR DEL TEXTO
+                                    "& .MuiInputBase-input": {
+                                        color: "var(--text)", // O el color que desees (ej: "#ffffff")
+                                        fontFamily: "var(--font-family)",
+                                    },
+                                    // CAMBIAR COLOR DE LA ETIQUETA (Label)
+                                    "& .MuiInputLabel-root": {
+                                        color: "var(--text)",
+                                    },
+                                    // CAMBIAR COLOR DE LA LÍNEA (Bottom border en variant standard)
+                                    "& .MuiInput-underline:before": {
+                                        borderBottomColor: "var(--Primary)",
+                                    },
                                 }}
                                 required
-                                variant="outlined"
+                                variant="standard"
 
                             />
 
@@ -190,24 +202,49 @@ export default function ContactSection() {
                                 name="email"
                                 sx={{
                                     width: "100%",
-                                    color: "var(--text)",
-                                    border: "1px solid var(--text)",
-                                    backgroundColor: "var(--Surface)"
+                                    
+                                    // CAMBIAR COLOR DEL TEXTO
+                                    "& .MuiInputBase-input": {
+                                        color: "var(--text)", // O el color que desees (ej: "#ffffff")
+                                        fontFamily: "var(--font-family)",
+                                    },
+                                    // CAMBIAR COLOR DE LA ETIQUETA (Label)
+                                    "& .MuiInputLabel-root": {
+                                        color: "var(--text)",
+                                    },
+                                    // CAMBIAR COLOR DE LA LÍNEA (Bottom border en variant standard)
+                                    "& .MuiInput-underline:before": {
+                                        borderBottomColor: "var(--Primary)"
+                                    },
                                 }}
                                 required
+                                variant="standard"
                             />
 
                             <TextField
                                 label={t("contact.form.message")}
+                                variant="standard"
                                 name='message'
+
                                 multiline
                                 rows={4}
                                 required
                                 sx={{
                                     width: "100%",
-                                    color: "var(--text)",
-                                    border: "1px solid var(--text)",
-                                    backgroundColor: "var(--Surface)"
+                                  
+                                    // CAMBIAR COLOR DEL TEXTO
+                                    "& .MuiInputBase-input": {
+                                        color: "var(--text)", // O el color que desees (ej: "#ffffff")
+                                        fontFamily: "var(--font-family)",
+                                    },
+                                    // CAMBIAR COLOR DE LA ETIQUETA (Label)
+                                    "& .MuiInputLabel-root": {
+                                        color: "var(--text)",
+                                    },
+                                    // CAMBIAR COLOR DE LA LÍNEA (Bottom border en variant standard)
+                                    "& .MuiInput-underline:before": {
+                                        borderBottomColor: "var(--Primary)",
+                                    },
                                 }}
                             />
 
