@@ -16,7 +16,7 @@ export default function Profile3D() {
                     borderRadius: "50%", // Corregido a 50% para un círculo perfecto
                     // Degradado sutil para la parte superior
                     background: "radial-gradient(circle at top, rgba(56,189,248,0.2), transparent 70%)",
-                    backgroundColor: "var(--background)", // Fondo base negro donde se difuminará la imagen
+                    backgroundColor: "black", // Fondo base negro donde se difuminará la imagen
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
