@@ -1,6 +1,7 @@
 import React from 'react'
 import { Box, Button, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
+import { Navigate } from 'react-router-dom';
 
 export default function HeroComponent() {
     const { t } = useTranslation();
@@ -71,8 +72,12 @@ export default function HeroComponent() {
                 >
                     <Button 
                     variant='outlined'
+                    onClick={() => {
+                        Navigate('/contact');
+                    }}
                     sx={{
                         marginRight: '1rem',
+                    
                         
                         padding:"10px",
                         borderRadius:"10px",
@@ -89,6 +94,8 @@ export default function HeroComponent() {
                     </Button>
                     <Button
                     variant='outlined'
+                    download
+                    href={t("hero.cvFileName")}
                     sx={{
                         
                         padding:"10px",

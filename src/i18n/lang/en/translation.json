@@ -11,7 +11,8 @@
         "firstName": "Vertilus",
         "title": "Full Stack Developer",
         "description": "I am a passionate developer dedicated to creating innovative solutions that transform ideas into efficient and scalable digital experiences. ",
-        "contact": "Contact Me"
+        "contact": "Contact Me",
+        "cvFileName": "/cv/Colby vertilus_(EN)_CV.pdf"
     },
     "projects": {
         "title": "Projects",
