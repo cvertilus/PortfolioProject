@@ -32,7 +32,7 @@
                 "description": "Platform to manage a shopping cart, e-commerce replica",
                 "tech": "React, Material UI",
                 "status": "Completed",
-                "image": "public/img/Ecommerce.png",
+                "image": "/img/Ecommerce.png",
                 "github": "https://github.com/cvertilus/EcommerceProject",
                 "demo": "https://reacteco.netlify.app/"
             },
@@ -67,7 +67,7 @@
                 "description": "Microservice to manage bank accounts, transfers, and users",
                 "tech": "Spring Boot, Docker, PostgreSQL, Swagger, Keycloak",
                 "status": "Completed",
-                "image": "public/img/BackendDigitalMoney.png",
+                "image": "/img/BackendDigitalMoney.png",
                 "github": "https://github.com/cvertilus/Backend-DigitalMoney"
             },
             "Sistema de reservacion cine": {

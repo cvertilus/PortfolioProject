@@ -23,7 +23,7 @@
                 "description": "Aplicación web desarrollada con Angular y Java Spring Boot",
                 "tech": "Angular, Spring Boot, MySQL",
                 "status": "Finalizado",
-                "image": "public/img/Portfolio.png",
+                "image": "/img/Portfolio.png",
                 "github": "https://github.com/cvertilus/PortfolioBackend",
                 "demo": "https://portfolio-frontend-e4ec2.web.app/"
             },
@@ -32,7 +32,7 @@
                 "description": "Plataforma para manejar un carrito, Replica de un E-commerce",
                 "tech": "React, Material Ui",
                 "status": "Finalizado",
-                "image": "public/img/Ecommerce.png",
+                "image": "/img/Ecommerce.png",
                 "github": "https://github.com/cvertilus/EcommerceProject",
                 "demo": "https://reacteco.netlify.app/"
             },
@@ -41,7 +41,7 @@
                 "description": "Generar Qr para compartir informacion de contacto y demas",
                 "tech": "React, Material UI",
                 "status": "Finalizado",
-                "image": "public/img/GenerarQR.png",
+                "image": "/img/GenerarQR.png",
                 "github": "https://github.com/cvertilus/GenerQr",
                 "demo": "https://makerqr.netlify.app/"
             },
@@ -50,7 +50,7 @@
                 "description": "Aplicación para buscar y ver las ultimas películas ",
                 "tech": "React, Material Ui, The Movie DB API",
                 "status": "Finalizado",
-                "image": "public/img/MovieSiteWeb.png",
+                "image": "/img/MovieSiteWeb.png",
                 "github": "https://github.com/cvertilus/moviesCine",
                 "demo": "https://htfilm.netlify.app/"
             },
@@ -59,7 +59,7 @@
                 "description": "Microservicio para gestionar usuarios y autenticación",
                 "tech": "Spring Boot, Docker, Keycloak",
                 "status": "Finalizado",
-                "image": "public/img/UserManagement.png",
+                "image": "/img/UserManagement.png",
                 "github": "https://github.com/cvertilus/UserManagement"
             },
             "api": {
@@ -67,7 +67,7 @@
                 "description": "Microservicio para gestionar cuentas bancarias, transferencias y usuarios",
                 "tech": "Spring Boot , Docker, PostgreSQL, Swagger, Keycloak",
                 "status": "Finalizado",
-                "image": "public/img/BackendDigitalMoney.png",
+                "image": "/img/BackendDigitalMoney.png",
                 "github": "https://github.com/cvertilus/Backend-DigitalMoney"
             },
             "Sistema de reservacion cine": {
