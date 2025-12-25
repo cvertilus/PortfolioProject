@@ -31,7 +31,7 @@ export default function Profile3D() {
       >
         <Box
           component="img"
-          src="public/img/colby-image-profile.png"
+          src="/img/colby-image-profile.png"
           alt="Profile"
           sx={{
             width: "85%",

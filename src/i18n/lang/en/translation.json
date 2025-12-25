@@ -23,7 +23,7 @@
                 "description": "Web application developed with Angular and Java Spring Boot",
                 "tech": "Angular, Spring Boot, MySQL",
                 "status": "Completed",
-                "image": "public/img/Portfolio.png",
+                "image": "/img/Portfolio.png",
                 "github": "https://github.com/cvertilus/PortfolioBackend",
                 "demo": "https://portfolio-frontend-e4ec2.web.app/"
             },
@@ -41,7 +41,7 @@
                 "description": "Application to generate QR codes for sharing contact information and more",
                 "tech": "React, Material UI",
                 "status": "Completed",
-                "image": "public/img/GenerarQR.png",
+                "image": "/img/GenerarQR.png",
                 "github": "https://github.com/cvertilus/GenerQr",
                 "demo": "https://makerqr.netlify.app/"
             },
@@ -50,7 +50,7 @@
                 "description": "Application to search and view the latest movies",
                 "tech": "React, Material UI, The Movie DB API",
                 "status": "Completed",
-                "image": "public/img/MovieSiteWeb.png",
+                "image": "/img/MovieSiteWeb.png",
                 "github": "https://github.com/cvertilus/moviesCine",
                 "demo": "https://htfilm.netlify.app/"
             },
@@ -59,7 +59,7 @@
                 "description": "Microservice to manage users and authentication",
                 "tech": "Spring Boot, Docker, Keycloak",
                 "status": "Completed",
-                "image": "public/img/UserManagement.png",
+                "image": "/img/UserManagement.png",
                 "github": "https://github.com/cvertilus/UserManagement"
             },
             "api": {
