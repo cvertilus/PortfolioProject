@@ -13,7 +13,7 @@ export default function Profile3D() {
         sx={{
           width: 280,
           height: 280,
-          borderRadius: "20%",
+          borderRadius: "90%",
           background:
             "radial-gradient(circle at top left, rgba(56,189,248,0.35), transparent 60%)",
           display: "flex",

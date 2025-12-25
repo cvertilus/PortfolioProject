@@ -244,7 +244,6 @@ export default function ContactSection() {
                     sx={{
                         maxWidth: "100%",
                         borderTop: "1px solid var(--Secondary)",
-                        mt: 6
                     }}
                 />
                 <Box
