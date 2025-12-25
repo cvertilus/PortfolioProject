@@ -62,7 +62,7 @@ export default function ContactSection() {
                 <Box
                     component="section"
                     sx={{
-                        width: "100%",
+                        maxWidth: "100%",
                         py: { xs: 8, md: 12 },
                         px: { xs: 2, md: 8 },
                         backgroundColor: "var(--background)",
@@ -174,7 +174,7 @@ export default function ContactSection() {
                                 label={t("contact.form.name")}
                                 name='name'
                                 sx={{
-                                    width: "100%",
+                                    maxWidth: "100%",
                                     color: "var(--text)",
                                     border: "1px solid var(--text)",
                                     backgroundColor: "var(--Surface)"
@@ -242,7 +242,7 @@ export default function ContactSection() {
 
                 <Box
                     sx={{
-                        width: "100%",
+                        maxWidth: "100%",
                         borderTop: "1px solid var(--Secondary)",
                         mt: 6
                     }}
