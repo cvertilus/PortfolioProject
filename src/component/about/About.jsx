@@ -18,21 +18,23 @@ export default function About() {
                 justifyContent: "center",
                 backgroundColor: "var(--background)",
                 color: "var(--text)",
-                px: { xs: 2, md: 8 },
-                pt:"15px"
+                px: { xs: 2, md: 4, lg: 8 },
+                py: 4
             }}
         >
             <Box
                 sx={{
                     display: "grid",
-                    gridTemplateColumns: { xs: "1fr", md: "1.2fr 1fr 1fr" },
-                    gap: "2rem",
-                    width: "100%"
+                    gridTemplateColumns: { xs: "1fr", md: "1fr 1fr ", lg: "1.5fr 1fr 1fr" },
+                    gap: { xs: "2rem", lg: "4rem" },
+                    maxWidth: "1400px",
+                    width: "100%",
+                    maring: "0 auto",
 
                 }}
             >
                 {/* Perfil 3D */}
-                <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <Box sx={{ display: "flex", alignItems:"center",justifyContent: "center",gridArea:"1/1/3/2" }}>
                     <Profile3D />
                 </Box>
 
@@ -50,6 +52,10 @@ export default function About() {
                         {t("about.intro2")}
                     </Typography>
                 </Box>
+               
+
+
+
 
                 {/* Tecnologías */}
                 <Box>
@@ -81,59 +87,61 @@ export default function About() {
                             />
                         ))}
                     </Stack>
+
+                    {/* Forma de trabajo */}
+                    
                 </Box>
 
-
-                {/* Forma de trabajo */}
-                <Box sx={{
-                    paddingLeft: {xs:"0", md:"6rem"}
-                }
-                }>
-                    <Typography variant="h6" sx={{ mb: 2 }}>
-                        {t("about.workflowTitle")}
-                    </Typography>
-
-                    {workflow.map((step, index) => (
-                        <Typography
-                            key={index}
-                            sx={{
-                                mb: 1,
-                                color: "var(--muted)",
-                                "&::before": {
-                                    content: `"✔"`,
-                                    marginRight: "8px",
-                                    color: "var(--Primary)"
-                                }
-                            }}
-                        >
-                            {step}
+           
+                <Box sx={{ flex: 1 }}> {/* flex: 1 hace que ocupen el mismo ancho */}
+                        <Typography variant="h6" sx={{ mb: 2, fontWeight: 700 }}>
+                            {t("about.workflowTitle")}
                         </Typography>
-                    ))}
-                </Box>
 
-                {/* Pasatiempos */}
-                <Box>
-                    <Typography variant="h6" sx={{ mb: 2 }}>
-                        {t("about.hobbiesTitle")}
-                    </Typography>
-
-                    {hobbies.map((hobby, index) => (
-                        <Typography
-                            key={index}
-                            sx={{
-                                mb: 1,
-                                color: "var(--muted)",
-                                "&::before": {
-                                    content: `"🏆"`,
-                                    marginRight: "8px",
-
-                                }
-                            }}
-                        >
-                            {hobby}
+                        {workflow.map((step, index) => (
+                            <Typography
+                                key={index}
+                                sx={{
+                                    mb: 1.5,
+                                    color: "var(--muted)",
+                                    display: "flex", // Mejora la alineación del icono con el texto
+                                    alignItems: "center",
+                                    "&::before": {
+                                        content: `"✔"`,
+                                        marginRight: "12px",
+                                        color: "var(--Primary)",
+                                        fontWeight: "bold"
+                                    }
+                                }}
+                            >
+                                {step}
+                            </Typography>
+                        ))}
+                    </Box>
+                    {/* Pasatiempos */}
+                    <Box sx={{ flex: 1 }}>
+                        <Typography variant="h6" sx={{ mb: 2, fontWeight: 700 }}>
+                            {t("about.hobbiesTitle")}
                         </Typography>
-                    ))}
-                </Box>
+
+                        {hobbies.map((hobby, index) => (
+                            <Typography
+                                key={index}
+                                sx={{
+                                    mb: 1.5,
+                                    color: "var(--muted)",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    "&::before": {
+                                        content: `"🏆"`,
+                                        marginRight: "12px",
+                                    }
+                                }}
+                            >
+                                {hobby}
+                            </Typography>
+                        ))}
+                    </Box>
 
 
             </Box>
