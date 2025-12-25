@@ -1,9 +1,10 @@
 import React from 'react'
 import { Box, Button, Typography } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function HeroComponent() {
+    const navigate = useNavigate();
     const { t } = useTranslation();
 
     return (
@@ -73,7 +74,7 @@ export default function HeroComponent() {
                     <Button 
                     variant='outlined'
                     onClick={() => {
-                        Navigate('/contact');
+                        navigate('/contact');
                     }}
                     sx={{
                         marginRight: '1rem',
