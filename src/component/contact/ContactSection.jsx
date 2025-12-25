@@ -170,16 +170,27 @@ export default function ContactSection() {
                         <TextField
                             label={t("contact.form.name")}
                             name='name'
-                            fullWidth
+                            sx={{
+                                width: "100%",
+                                color: "var(--text)",
+                                border: "1px solid var(--text)",
+                                backgroundColor: "var(--Surface)"
+                            }}
                             required
                             variant="outlined"
+
                         />
 
                         <TextField
                             label={t("contact.form.email")}
                             type="email"
                             name="email"
-                            fullWidth
+                            sx={{
+                                width: "100%",
+                                color: "var(--text)",
+                                border: "1px solid var(--text)",
+                                backgroundColor: "var(--Surface)"
+                            }}
                             required
                         />
 
@@ -188,8 +199,13 @@ export default function ContactSection() {
                             name='message'
                             multiline
                             rows={4}
-                            fullWidth
                             required
+                            sx={{
+                                width: "100%",
+                                color: "var(--text)",
+                                border: "1px solid var(--text)",
+                                backgroundColor: "var(--Surface)"
+                            }}
                         />
 
                         <Button
@@ -219,22 +235,7 @@ export default function ContactSection() {
                     </Box>
                 </Box>
             </Box>
-            <Snackbar
-                open={snackbar.open}
-                autoHideDuration={4000}
-                onClose={handleSnackbarClose}
-                anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
-            >
-                <MuiAlert
-                    onClose={handleSnackbarClose}
-                    severity={snackbar.severity}
-                    elevation={6}
-                    variant="filled"
-                    sx={{ width: "100%" }}
-                >
-                    {snackbar.message}
-                </MuiAlert>
-            </Snackbar>
+
 
             <Box
                 sx={{
@@ -255,8 +256,22 @@ export default function ContactSection() {
             >
                 © {new Date().getFullYear()} Vertilus Colby . {t("contact.footer")}.
             </Box>
-
-
+            <Snackbar
+                open={snackbar.open}
+                autoHideDuration={4000}
+                onClose={handleSnackbarClose}
+                anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+            >
+                <MuiAlert
+                    onClose={handleSnackbarClose}
+                    severity={snackbar.severity}
+                    elevation={6}
+                    variant="filled"
+                    sx={{ width: "100%" }}
+                >
+                    {snackbar.message}
+                </MuiAlert>
+            </Snackbar>
 
         </>
     )

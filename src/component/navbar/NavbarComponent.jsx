@@ -1,4 +1,4 @@
-import { AppBar, useMediaQuery, Toolbar, Typography, Button, Box, Drawer, ToggleButtonGroup, ToggleButton} from '@mui/material';
+import { AppBar, useMediaQuery, Toolbar, Typography, Button, Box, Drawer, ToggleButtonGroup, ToggleButton } from '@mui/material';
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 import { useTheme } from '@mui/material/styles';
@@ -37,10 +37,11 @@ export default function NavbarComponent() {
 
     const DrawerMenu = (
         <Box
-            sx={{ width: 250 }}
+            sx={{ width: 250 , backgroundColor: 'var(--background)', height: '100%'}}
             role="presentation"
             onClick={toggleDrawer(false)}
             onKeyDown={toggleDrawer(false)}
+
         >
             {menuItems.map((item, index) => (
                 <Typography
@@ -56,7 +57,8 @@ export default function NavbarComponent() {
                         cursor: 'pointer',
                         color: 'var(--text)',
                         textDecoration: 'none',
-                        
+                        backgroundColor: 'var(--background)',
+
                         '&::after': {
                             content: '""',
                             position: 'absolute',
@@ -149,12 +151,47 @@ export default function NavbarComponent() {
                                             onChange={handleChange}
                                             aria-label="Language selection"
                                             sx={{
-                                                height: "20px",
-                                                fontFamily: "var(--font-family)",
+                                                height: "32px", // Aumentado un poco para que el borde y padding respiren
+                                                gap: "0px",     // Espaciado entre botones si lo deseas
+                                                "& .MuiToggleButtonGroup-grouped": {
+                                                    border: "none", // Quitamos el borde por defecto del grupo
+                                                    "&:not(:first-of-type)": {
+                                                        marginLeft: 0,
+                                                        borderLeft: "none",
+                                                    },
+                                                },
                                             }}
                                         >
-                                            <ToggleButton value="es" sx={{ borderRadius: "35px", borderColor: "var(--primary)" }}>ES</ToggleButton>
-                                            <ToggleButton value="en" sx={{ borderRadius: "35px", borderColor: "var(--primary)" }}>EN</ToggleButton>
+                                            {["es", "en"].map((lang) => (
+                                                <ToggleButton
+                                                    key={lang}
+                                                    value={lang}
+                                                    sx={{
+                                                        borderRadius: "25px !important", // !important asegura que MUI no lo sobreescriba
+                                                        fontFamily: "var(--font-family)",
+                                                        textTransform: "uppercase",
+                                                        px: 2,
+
+                                                        // ESTADO POR DEFECTO (Inactivo)
+                                                        color: "var(--text)",
+                                                        border: "2px solid var(--Primary) !important",
+                                                        backgroundColor: "transparent",
+
+                                                        // ESTADO ACTIVO (Seleccionado)
+                                                        "&.Mui-selected": {
+                                                            backgroundColor: "var(--Primary) !important",
+                                                            color: "white", // O el color de texto que prefieras para contraste
+                                                            border: "2px solid var(--Primary) !important",
+                                                            "&:hover": {
+                                                                backgroundColor: "var(--Primary)",
+                                                                opacity: 0.9,
+                                                            },
+                                                        },
+                                                    }}
+                                                >
+                                                    {lang}
+                                                </ToggleButton>
+                                            ))}
                                         </ToggleButtonGroup>
                                     </Box>
                                 </Box>
@@ -217,13 +254,47 @@ export default function NavbarComponent() {
                                         onChange={handleChange}
                                         aria-label="Language selection"
                                         sx={{
-                                            height: "20px",
-                                            fontFamily: "var(--font-family)",
+                                            height: "32px", // Aumentado un poco para que el borde y padding respiren
+                                            gap: "0px",     // Espaciado entre botones si lo deseas
+                                            "& .MuiToggleButtonGroup-grouped": {
+                                                border: "none", // Quitamos el borde por defecto del grupo
+                                                "&:not(:first-of-type)": {
+                                                    marginLeft: 0,
+                                                    borderLeft: "none",
+                                                },
+                                            },
                                         }}
-
                                     >
-                                        <ToggleButton value="es" sx={{ borderRadius: "25px", borderColor: "var(--primary)", fontFamily: "var(--font-family)" }}>ES </ToggleButton>
-                                        <ToggleButton value="en" sx={{ borderRadius: "25px", borderColor: "var(--primary)", fontFamily: "var(--font-family)" }}>EN</ToggleButton>
+                                        {["es", "en"].map((lang) => (
+                                            <ToggleButton
+                                                key={lang}
+                                                value={lang}
+                                                sx={{
+                                                    borderRadius: "25px !important", // !important asegura que MUI no lo sobreescriba
+                                                    fontFamily: "var(--font-family)",
+                                                    textTransform: "uppercase",
+                                                    px: 2,
+
+                                                    // ESTADO POR DEFECTO (Inactivo)
+                                                    color: "var(--text)",
+                                                    border: "2px solid var(--Primary) !important",
+                                                    backgroundColor: "transparent",
+
+                                                    // ESTADO ACTIVO (Seleccionado)
+                                                    "&.Mui-selected": {
+                                                        backgroundColor: "var(--Primary) !important",
+                                                        color: "white", // O el color de texto que prefieras para contraste
+                                                        border: "2px solid var(--Primary) !important",
+                                                        "&:hover": {
+                                                            backgroundColor: "var(--Primary)",
+                                                            opacity: 0.9,
+                                                        },
+                                                    },
+                                                }}
+                                            >
+                                                {lang}
+                                            </ToggleButton>
+                                        ))}
                                     </ToggleButtonGroup>
                                 </Box>
 
