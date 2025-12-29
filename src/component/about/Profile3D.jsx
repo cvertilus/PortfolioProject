@@ -13,10 +13,10 @@ export default function Profile3D() {
                 sx={{
                     width: 280,
                     height: 280,
-                    borderRadius: "50%", // Corregido a 50% para un círculo perfecto
+                    borderRadius: "10%", // Corregido a 50% para un círculo perfecto
                     // Degradado sutil para la parte superior
                     background: "radial-gradient(circle at top, rgba(56,189,248,0.2), transparent 70%)",
-                    backgroundColor: "black", // Fondo base negro donde se difuminará la imagen
+                    backgroundColor: "transparent", // Fondo base negro donde se difuminará la imagen
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -34,12 +34,13 @@ export default function Profile3D() {
             >
                 <Box
                     component="img"
-                    src="/img/profile.png"
+                    src="/img/profile2.png"
                     alt="Profile"
+                    
                     sx={{
-                        width: "90%",
-                        height: "90%",
-                        objectFit: "contain",
+                        width: "auto%",
+                        height: "100%",
+                        objectFit: "cover",
                         // ESTA ES LA CLAVE: Máscara que hace transparente la parte inferior
                         WebkitMaskImage: "linear-gradient(to right, black 90%, transparent 95%)",
                         maskImage: "linear-gradient(to Left, black 90%, transparent 95%)",
