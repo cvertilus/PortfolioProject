@@ -4,30 +4,25 @@ export default function Profile3D() {
     return (
         <Box
             sx={{
-                perspective: "1000px",
+                perspective: "1200px",
                 display: "flex",
                 justifyContent: "center",
-                height: { xs: "300px", md: "400px" },
-                width: { xs: "300px", md: "400px" },
+                alignItems: "center",
+                height: { xs: 280, md: 380 },
+                width: { xs: 280, md: 380 },
             }}
         >
             <Box
                 sx={{
-                 
-                    borderRadius: "10%", // Corregido a 50% para un círculo perfecto
-                    // Degradado sutil para la parte superior
-                    background: "radial-gradient(circle at top, rgba(56,189,248,0.2), transparent 70%)",
-                    backgroundColor: "transparent", 
-                    
-                    transition: "all 0.4s ease",
-                    position: "relative",
-                    overflow: "hidden", // Importante para que la imagen no sobresalga
-                    boxShadow: `
-        0 20px 40px rgba(0,0,0,0.8),
-        inset 0 0 30px rgba(56,189,248,0.1)
-      `,
+                    width: "100%",
+                    height: "100%",
+                    borderRadius: 4,
+                    overflow: "hidden",
+                    transformStyle: "preserve-3d",
+                    transition: "transform 0.6s ease",
+                    boxShadow: "0 25px 60px rgba(0,0,0,0.5)",
                     "&:hover": {
-                        transform: "rotateY(10deg) rotateX(6deg) scale(1.05)",
+                        transform: "rotateY(12deg) rotateX(8deg)",
                     },
                 }}
             >
@@ -35,18 +30,16 @@ export default function Profile3D() {
                     component="img"
                     src="/img/profile2.png"
                     alt="Profile"
-                    
                     sx={{
-                        width: "auto%",
+                        width: "100%",
                         height: "100%",
-                        objectFit: "cover",
-                        // ESTA ES LA CLAVE: Máscara que hace transparente la parte inferior
-                        WebkitMaskImage: "linear-gradient(to right, black 90%, transparent 95%)",
-                        maskImage: "linear-gradient(to Left, black 90%, transparent 95%)",
-                        filter: "drop-shadow(0 12px 20px rgba(0,0,0,0.6))",
+                        objectFit: "contain",
+                        transform: "translateZ(30px)",
                     }}
                 />
             </Box>
         </Box>
+
+
     );
 }
