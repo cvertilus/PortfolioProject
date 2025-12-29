@@ -33,7 +33,7 @@ export default function Profile3D() {
                     sx={{
                         width: "100%",
                         height: "100%",
-                        objectFit: "contain",
+                        objectFit: "cover",
                         transform: "translateZ(30px)",
                     }}
                 />
