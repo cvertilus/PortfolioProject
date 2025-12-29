@@ -34,15 +34,15 @@ export default function Profile3D() {
             >
                 <Box
                     component="img"
-                    src="/img/colby-image-profile.png"
+                    src="/img/profile.png"
                     alt="Profile"
                     sx={{
                         width: "90%",
                         height: "90%",
                         objectFit: "contain",
                         // ESTA ES LA CLAVE: Máscara que hace transparente la parte inferior
-                        WebkitMaskImage: "linear-gradient(to bottom, black 50%, transparent 95%)",
-                        maskImage: "linear-gradient(to bottom, black 50%, transparent 95%)",
+                        WebkitMaskImage: "linear-gradient(to bottom, black %, transparent 95%)",
+                        maskImage: "linear-gradient(to bottom, black 60%, transparent 95%)",
                         filter: "drop-shadow(0 12px 20px rgba(0,0,0,0.6))",
                     }}
                 />
