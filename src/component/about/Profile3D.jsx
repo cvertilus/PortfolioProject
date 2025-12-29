@@ -42,7 +42,7 @@ export default function Profile3D() {
                         objectFit: "contain",
                         // ESTA ES LA CLAVE: Máscara que hace transparente la parte inferior
                         WebkitMaskImage: "linear-gradient(to bottom, black 35%, transparent 95%)",
-                        maskImage: "linear-gradient(to bottom, black 55%, transparent 95%)",
+                        maskImage: "linear-gradient(to bottom, black 45%, transparent 95%)",
                         filter: "drop-shadow(0 12px 20px rgba(0,0,0,0.6))",
                     }}
                 />
