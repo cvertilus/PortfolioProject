@@ -7,19 +7,18 @@ export default function Profile3D() {
                 perspective: "1000px",
                 display: "flex",
                 justifyContent: "center",
+                height: { xs: "300px", md: "400px" },
+                width: { xs: "300px", md: "400px" },
             }}
         >
             <Box
                 sx={{
-                    width: 280,
-                    height: 280,
+                 
                     borderRadius: "10%", // Corregido a 50% para un círculo perfecto
                     // Degradado sutil para la parte superior
                     background: "radial-gradient(circle at top, rgba(56,189,248,0.2), transparent 70%)",
-                    backgroundColor: "transparent", // Fondo base negro donde se difuminará la imagen
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
+                    backgroundColor: "transparent", 
+                    
                     transition: "all 0.4s ease",
                     position: "relative",
                     overflow: "hidden", // Importante para que la imagen no sobresalga
