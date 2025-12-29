@@ -56,7 +56,14 @@ export default function ContactSection() {
     }
     return (
         <>
-            <Box>
+            <Box sx={{
+                minHeight: "100%",
+                backgroundColor: "var(--background)",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-between",
+
+            }}>
 
 
                 <Box
@@ -65,7 +72,7 @@ export default function ContactSection() {
                         maxWidth: "100%",
                         py: { xs: 8, md: 12 },
                         px: { xs: 2, md: 8 },
-                        backgroundColor: "var(--background)",
+
                         color: "var(--text)",
 
                     }}
@@ -176,7 +183,7 @@ export default function ContactSection() {
 
                                 sx={{
                                     width: "100%",
-                                    
+
                                     // CAMBIAR COLOR DEL TEXTO
                                     "& .MuiInputBase-input": {
                                         color: "var(--text)", // O el color que desees (ej: "#ffffff")
@@ -202,7 +209,7 @@ export default function ContactSection() {
                                 name="email"
                                 sx={{
                                     width: "100%",
-                                    
+
                                     // CAMBIAR COLOR DEL TEXTO
                                     "& .MuiInputBase-input": {
                                         color: "var(--text)", // O el color que desees (ej: "#ffffff")
@@ -231,7 +238,7 @@ export default function ContactSection() {
                                 required
                                 sx={{
                                     width: "100%",
-                                  
+
                                     // CAMBIAR COLOR DEL TEXTO
                                     "& .MuiInputBase-input": {
                                         color: "var(--text)", // O el color que desees (ej: "#ffffff")
@@ -276,25 +283,28 @@ export default function ContactSection() {
                     </Box>
                 </Box>
 
+                <Box>
+                    <Box
+                        sx={{
+                            maxWidth: "100%",
+                            borderTop: "1px solid var(--Secondary)",
+                        }}
+                    />
+                    <Box
+                        sx={{
+                            width: "100%",
+                            py: 3,
+                            textAlign: "center",
+                            fontSize: "0.85rem",
+                            color: "var(--muted)",
+                            backgroundColor: "var(--background)"
+                        }}
+                    >
+                        © {new Date().getFullYear()} Vertilus Colby . {t("contact.footer")}.
+                    </Box>
 
-                <Box
-                    sx={{
-                        maxWidth: "100%",
-                        borderTop: "1px solid var(--Secondary)",
-                    }}
-                />
-                <Box
-                    sx={{
-                        width: "100%",
-                        py: 3,
-                        textAlign: "center",
-                        fontSize: "0.85rem",
-                        color: "var(--muted)",
-                        backgroundColor: "var(--background)"
-                    }}
-                >
-                    © {new Date().getFullYear()} Vertilus Colby . {t("contact.footer")}.
                 </Box>
+
                 <Snackbar
                     open={snackbar.open}
                     autoHideDuration={4000}
